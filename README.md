@@ -1,6 +1,6 @@
 # Controllable RANSAC-based Anomaly Detection via Hypothesis Testing
 
-This is the implementation of a novel statistical method to compute valid p-value for RANSAC-based anomaly detection based on the Selective Inferences (SI) framework. The proposed method employs Divide-and-conquer and Dynamic Programming concepts to enhance the statistical power while maintaining efficient computational time.
+This is the implementation of a novel method to compute valid p-value for RANSAC-based anomaly detection based on the Selective Inferences (SI) framework. The proposed method employs Divide-and-conquer and Dynamic Programming concepts to enhance the statistical power while maintaining efficient computational time.
 
 ## Installation & Requirements
 
