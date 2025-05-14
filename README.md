@@ -29,7 +29,7 @@ All the figure results are saved in folder "/results". Some other results are sh
     ```
 ## Example for computing p-value in R
 
-To compute p-value in R, please install [reticulate](https://rstudio.github.io/reticulate/) first. Then, replacing ```"my_r_env"``` in line 3 of ```ex3_p_value_R.R``` with the environment that already install numpy and mpmath. Then, to compute p-value, please run  
+To compute p-value in R, please install [reticulate](https://rstudio.github.io/reticulate/) first. Then, replacing ```"my_r_env"``` in line 3 of ```ex3_p_value_R.R``` with the environment that already install numpy and mpmath. Finally, please run
 
   ```
   >> Rscript ex3_p_value_R.R
