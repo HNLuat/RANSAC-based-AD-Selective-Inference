@@ -58,13 +58,13 @@ def identifying_truncated_region(model, X, a, b):
     # Calculate Z
     Z = []
     for b in range(1, B+1):
-        Z2_b = [(np.NINF, np.Inf)]
+        Z2_b = [(-np.inf, np.inf)]
         for j in range(1, n + 1):
             if j - 1 not in Oobs:
                 Z2_b = getIntersection(Z2_b, R[b][j])
             else:
                 Z2_b = getIntersection(Z2_b, getComplement(R[b][j]))
-        Z1_b = [(np.NINF, np.Inf)]
+        Z1_b = [(-np.inf, np.inf)]
         for u in range(1, b):
             Z1_b = getIntersection(Z1_b, S[u][n][len(Oobs)])
         for u in range(b+1, B+1):
