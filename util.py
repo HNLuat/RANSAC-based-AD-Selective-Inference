@@ -42,19 +42,19 @@ def solveEquation(A, B, C):
             if C > 0:
                 return []
             else:
-                return [(np.NINF, np.Inf)]
+                return [(-np.inf, np.inf)]
         # Case: B != 0
         else: 
             # Case: B > 0
             if B > 0:
                 #  [-oo, -C/B]
-                left = np.NINF
+                left = -np.inf
                 right = -C/B
             # Case: Q2 < 0
             else:
                 # [-C/B, oo]
                 left = -C/B
-                right = np.Inf
+                right = np.inf
             return [(left, right)]
             
     # Case: A != 0
@@ -67,7 +67,7 @@ def solveEquation(A, B, C):
                     return [(-B/(2*A), -B/(2*A))]
                 return []
             else:
-                return [(np.NINF, np.Inf)]
+                return [(-np.inf, np.inf)]
         # Case: Delta > 0
         else:
             sol1 = (-B + np.sqrt(Delta))/(2*A)
@@ -79,7 +79,7 @@ def solveEquation(A, B, C):
             if A > 0:
                 return [(sol1, sol2)]
             else:
-                return [(np.NINF, sol1), (sol2, np.Inf)]
+                return [(-np.inf, sol1), (sol2, np.inf)]
             
 
 
