@@ -27,3 +27,7 @@ All the figure results are saved in folder "/results". Some other results are sh
     ```
     >> python ex2_p_value.py
     ```
+- Example for computing p-value in R
+    ```
+    >> Rscript ex3_p_value_R.R
+    ```
